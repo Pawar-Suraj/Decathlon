@@ -53,44 +53,7 @@
                         </div>
                     </div>
                     <script>
-                        function darkMode() {
-                            const imgDark = document.getElementById("img-dark");
-                            imgDark.classList.add('activeth');
-
-                            const imglight = document.getElementById("img-light");
-                            imglight.classList.remove('activeth');
-
-                            const bodyElement = document.getElementById('body');
-                            bodyElement.className = "theme-dark"
-
-                            const header = document.getElementById("header");
-                            header.classList.add('bg-dark');
-                            header.classList.add('text-light');
-                            header.dataset.bsTheme = 'dark';
-
-                            const footer = document.getElementById('footer');
-                            footer.className = 'footer-dark';
-
-                        }
-                        function lightMode() {
-                            const imglight = document.getElementById("img-light");
-                            imglight.classList.add('activeth');
-                            const imgDark = document.getElementById("img-dark");
-                            imgDark.classList.remove('activeth');
-
-                            const bodyElement = document.getElementById('body');
-                            bodyElement.className = "theme-light"
-
-                            const header = document.getElementById("header");
-                            header.classList.add('bg-light');
-                            header.classList.add('text-dark');
-                            header.dataset.bsTheme = 'light';
-
-                            const footer = document.getElementById('footer');
-                            footer.classList.remove('footer-dark');
-                        }
-
-
+                       
                     </script>
 
                 </ul>
@@ -249,6 +212,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="./js/mainjs.js"></script>
 </body>
 
 </html>
