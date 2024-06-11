@@ -10,9 +10,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="body" class="">
   <!--Navbar start-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle " id="header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" ><img src="./images/Decathlon_Logo.svg.png" class="img-fluid" style="width: 150px;"  alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,14 +39,62 @@
                     <li class="nav-item">
                         <span class="badge text-bg-warning p-3" style="font-size: 16px; font-weight: bolder;">50% OFF</span>
                     </li>
+                
+                       <div class="theme-toggler-container my-2 mx-1 ">
+                            <div class="theme-toggler-body">
+                                <div class="theme-toggler-image d-flex ">
+                                    <img src="./icons/light-mode.png" class="theme-icons align-item-center mx-1 activeth" id="img-light" alt="" onclick="lightMode()">
+                                    <img src="./icons/night-mode.png" class="theme-icons align-item-center mx-1" id="img-dark" alt="" onclick="darkMode()">
+                                </div>
+                            </div>
+                       </div> 
+                    <script>
+                        function darkMode(){
+                            const imgDark = document.getElementById("img-dark");
+                            imgDark.classList.add('activeth');
+
+                            const imglight = document.getElementById("img-light");
+                            imglight.classList.remove('activeth');
+
+                            const bodyElement = document.getElementById('body');
+                            bodyElement.className = "theme-dark"
+
+                            const header = document.getElementById("header");
+                            header.classList.add('bg-dark');
+                            header.classList.add('text-light');
+                            header.dataset.bsTheme = 'dark';
+
+                            const footer = document.getElementById('footer');
+                            footer.className = 'footer-dark';
+                        }
+                        function lightMode(){
+                            const imglight = document.getElementById("img-light");
+                            imglight.classList.add('activeth');
+                            const imgDark = document.getElementById("img-dark");
+                            imgDark.classList.remove('activeth');
+
+                            const bodyElement = document.getElementById('body');
+                            bodyElement.className = "theme-light"
+
+                            const header = document.getElementById("header");
+                            header.classList.add('bg-light');
+                            header.classList.add('text-dark');
+                            header.dataset.bsTheme = 'light';
+
+                            const footer = document.getElementById('footer');
+                            footer.classList.remove('footer-dark');
+                        }
+                
+                        
+                    </script>
                   
                 </ul>
                 <ul class="nav-container navbar-nav ms-auto mb-2 mb-lg-0 w-25 d-flex justify-content-end">
                     <li>
-                        <a href="" class="navbar-buttons btn btn-outline-dark p-2 m-2 signin-button">Sign in</a>
+                        <a href="" class=" btn  p-2 m-2 signin-button" >Sign in</a>
                     </li>
                     <li>
-                        <a href="" class="navbar-buttons btn btn-outline-dark p-2 m-2 login-button">Log in</a>
+                        <a href="" class=" btn  p-2 m-2 login-button">Log in</a>
                     </li>
                 </ul>
             </div>
@@ -90,11 +138,13 @@
   <!--Banner slider end-->
 
 
-
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est delectus totam minima ratione commodi culpa quos vel quia asperiores neque?
+</p>
   
  <!--Start Footer -->
 
- <footer>
+ <footer id="footer" class="">
     <div class="footer-container">
         <div class="footer-content">
             <h3>Contact Us</h3>
