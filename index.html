@@ -11,10 +11,11 @@
 </head>
 
 <body id="body" class="">
-  <!--Navbar start-->
+    <!--Navbar start-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle " id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" ><img src="./images/Decathlon_Logo.svg.png" class="img-fluid" style="width: 150px;"  alt="Logo"></a>
+            <a class="navbar-brand" href="#"><img src="./images/Decathlon_Logo.svg.png" class="img-fluid"
+                    style="width: 150px;" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Shoes</a>
                     </li>
-                   
+
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Sport supply</a>
                     </li>
@@ -37,19 +38,22 @@
                         <a class="nav-link active" href="#">Camping</a>
                     </li>
                     <li class="nav-item">
-                        <span class="badge text-bg-warning p-3" style="font-size: 16px; font-weight: bolder;">50% OFF</span>
+                        <span class="badge text-bg-warning p-3" style="font-size: 16px; font-weight: bolder;">50%
+                            OFF</span>
                     </li>
-                
-                       <div class="theme-toggler-container my-2 mx-1 ">
-                            <div class="theme-toggler-body">
-                                <div class="theme-toggler-image d-flex ">
-                                    <img src="./icons/light-mode.png" class="theme-icons align-item-center mx-1 activeth" id="img-light" alt="" onclick="lightMode()">
-                                    <img src="./icons/night-mode.png" class="theme-icons align-item-center mx-1" id="img-dark" alt="" onclick="darkMode()">
-                                </div>
+
+                    <div class="theme-toggler-container my-2 mx-1 ">
+                        <div class="theme-toggler-body">
+                            <div class="theme-toggler-image d-flex ">
+                                <img src="./icons/light-mode.png" class="theme-icons align-item-center mx-1 activeth"
+                                    id="img-light" alt="" onclick="lightMode()">
+                                <img src="./icons/night-mode.png" class="theme-icons align-item-center mx-1"
+                                    id="img-dark" alt="" onclick="darkMode()">
                             </div>
-                       </div> 
+                        </div>
+                    </div>
                     <script>
-                        function darkMode(){
+                        function darkMode() {
                             const imgDark = document.getElementById("img-dark");
                             imgDark.classList.add('activeth');
 
@@ -66,8 +70,9 @@
 
                             const footer = document.getElementById('footer');
                             footer.className = 'footer-dark';
+
                         }
-                        function lightMode(){
+                        function lightMode() {
                             const imglight = document.getElementById("img-light");
                             imglight.classList.add('activeth');
                             const imgDark = document.getElementById("img-dark");
@@ -84,14 +89,14 @@
                             const footer = document.getElementById('footer');
                             footer.classList.remove('footer-dark');
                         }
-                
-                        
+
+
                     </script>
-                  
+
                 </ul>
                 <ul class="nav-container navbar-nav ms-auto mb-2 mb-lg-0 w-25 d-flex justify-content-end">
                     <li>
-                        <a href="" class=" btn  p-2 m-2 signin-button" >Sign in</a>
+                        <a href="" class=" btn  p-2 m-2 signin-button">Sign in</a>
                     </li>
                     <li>
                         <a href="" class=" btn  p-2 m-2 login-button">Log in</a>
@@ -100,101 +105,147 @@
             </div>
         </div>
     </nav>
-    
-  <!--Navbar end-->
 
-  
-  <!--Banner slider start start-->
-  <div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/banner1.avif" class="d-block w-100" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/banner2.avif" class="d-block w-100" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/banner3.avif" class="d-block w-100" alt="Slide 3">
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  
-  <!--Banner slider end-->
+    <!--Navbar end-->
 
 
-<p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est delectus totam minima ratione commodi culpa quos vel quia asperiores neque?
-</p>
-  
- <!--Start Footer -->
-
- <footer id="footer" class="">
-    <div class="footer-container">
-        <div class="footer-content">
-            <h3>Contact Us</h3>
-            <div class="contact">
-                <i class="far fa-envelope"></i>
-                <p><a href="mailto:Decathlon@gmail.com">Decathlon@gmail.com</a></p>
-            </div>
-            <div class="contact">
-                <i class="fas fa-phone-volume"></i><a href="tel:99778855444">
-                    <p> 99778855444
-                </a></p>
-            </div>
-            <div class="contact">
-                <i class="fas fa-map-marker-alt"></i>
-                <p><a href="" target="blank">
-                        pune highway , wagholi pune Maharashtra  </a>
-            </div>
-            </p>
+    <!--Banner slider start start-->
+    <div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
 
-        <div class="footer-content">
-            <h3>Quick Links</h3>
-            <ul class="list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/aboutus.html">About Us</a></li>
-                <li><a href="./pages/clothing.html">Clothing</a></li>
-                <li><a href="./pages/gymsupply.html"></a>Gym Supplies</li>
-                <li><a href="./pages/shoes.html">Shoes</a></li>
-
-            </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/banner1.avif" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner2.avif" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner3.avif" class="d-block w-100" alt="Slide 3">
+            </div>
         </div>
-        <div class="footer-content">
-            <h3>Follow Us</h3>
-            <div class="social-media">
-                <ul>
-                    <li><a href="https://www.facebook.com" target="_blank"><i
-                                class="fa-brands fa-facebook-f"></i></a> </li>
-                    <li><a href="https://www.instagram.com" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!--Banner slider end-->
+
+
+    <!--illustration area start-->
+    <div class="container text-center mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="illu-container">
+                    <a href="#"><img src="./images/illu-men.avif" class="illu-images" alt=""></a>
+                    <p>Men</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="illu-container">
+                    <a href="#"><img src="./images/illu-women.avif" class="illu-images" alt=""></a>
+                    <p>Women</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="illu-container">
+                    <a href="#"><img src="./images/illu-kids.avif" class="illu-images" alt=""></a>
+                    <p>Kids</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="illu-container">
+                    <a href="#"><img src="./images/illu-sports.avif" class="illu-images" alt=""></a>
+                    <p>Sport </p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="illu-container">
+                    <a href="#"><img src="./images/illu-sale.avif" class="illu-images" alt=""></a>
+                    <p>Sale</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="illu-container">
+                    <a href="#"><img src="./images/illu-sport-equi.avif" class="illu-images" alt=""></a>
+                    <p>Sport Equ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--illustration area end-->
+
+
+   
+
+    <!--Start Footer -->
+
+    <footer id="footer" class="">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <div class="contact">
+                    <i class="far fa-envelope"></i>
+                    <p><a href="mailto:Decathlon@gmail.com">Decathlon@gmail.com</a></p>
+                </div>
+                <div class="contact">
+                    <i class="fas fa-phone-volume"></i><a href="tel:99778855444">
+                        <p> 99778855444
+                    </a></p>
+                </div>
+                <div class="contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><a href="" target="blank">
+                            pune highway , wagholi pune Maharashtra </a>
+                </div>
+                </p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/aboutus.html">About Us</a></li>
+                    <li><a href="./pages/clothing.html">Clothing</a></li>
+                    <li><a href="./pages/gymsupply.html"></a>Gym Supplies</li>
+                    <li><a href="./pages/shoes.html">Shoes</a></li>
+
                 </ul>
             </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a> </li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-   
-</footer>
 
-<!--End Footer-->
+    </footer>
 
-  <script src="https://kit.fontawesome.com/38442ccd2f.js" crossorigin="anonymous"></script>
+    <!--End Footer-->
+
+    <script src="https://kit.fontawesome.com/38442ccd2f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
