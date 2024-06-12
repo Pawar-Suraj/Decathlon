@@ -14,7 +14,7 @@
     <!--Navbar start-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle " id="header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./images/Decathlon_Logo.svg.png" class="img-fluid"
+            <a class="navbar-brand" href="./index.html"><img src="./images/Decathlon_Logo.svg.png" class="img-fluid"
                     style="width: 150px;" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,18 +24,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav-container navbar-nav ms-auto mb-2 mb-lg-0 w-50">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Clothing</a>
+                        <a  class="nav-link active" aria-current="page" href="./pages/clothing.html" target="_blank">Clothing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Shoes</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Sport supply</a>
+                        <a class="nav-link active" href="./pages/shoes.html"target="_blank">Shoes</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Camping</a>
+                        <a class="nav-link active" href="./pages/sportsupply.html "  target="_blank">Sport supply</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./pages/gymsupply.html " target="_blank">Gym</a>
                     </li>
                     <li class="nav-item">
                         <span class="badge text-bg-warning p-3" style="font-size: 16px; font-weight: bolder;">50%
@@ -52,17 +52,15 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                       
-                    </script>
+                   
 
                 </ul>
                 <ul class="nav-container navbar-nav ms-auto mb-2 mb-lg-0 w-25 d-flex justify-content-end">
                     <li>
-                        <a href="" class=" btn  p-2 m-2 signin-button">Sign in</a>
+                        <a href="./pages/registration.html" class=" btn  p-2 m-2 signin-button">Sign in</a>
                     </li>
                     <li>
-                        <a href="" class=" btn  p-2 m-2 login-button">Log in</a>
+                        <a href="./pages/login.html" class=" btn  p-2 m-2 login-button">Log in</a>
                     </li>
                 </ul>
             </div>
@@ -154,6 +152,61 @@
     <!--illustration area end-->
 
 
+    <style>
+     
+        .main-img{
+            height: auto;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: block;
+            margin: 40px auto;
+            padding : 15px;
+            box-shadow: 0 0 10px 2px white;
+        }
+        .p-img{
+            height: 70px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .p-review{
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width:600px) {
+            .main-img{
+                width: 70%;
+                height: 90%;
+            }
+            .p-review{
+                width: 90%;
+                display: block;
+                margin: 10px auto;
+            }
+            
+        }
+    </style>
+    <img src="./images/cap.avif" id="main-img" class="main-img">
+
+    <div class="p-review">
+        <img src="./images/cap.avif" class="p-img" onclick="changimg('./images/cap.avif')">
+        <img src="./images/bottles.avif" class="p-img" onclick="changimg('./images/bottles.avif')"> 
+        <img src="./images/backpack.avif" class="p-img" onclick="changimg('./images/backpack.avif')">
+        <img src="./images/sunglass.avif" class="p-img" onclick="changimg('./images/sunglass.avif')">
+        <img src="./images/pump.avif" class="p-img" onclick="changimg('./images/pump.avif')">
+        <img src="./images/helmet.avif" class="p-img" onclick="changimg('./images/helmet.avif')">
+    </div>
+
+    <script>
+        function changimg(img){
+            const mainImg=document.getElementById('main-img');
+            mainImg.src=img;
+        }
+    </script>
    
 
     <!--Start Footer -->

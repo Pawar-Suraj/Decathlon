@@ -30,9 +30,9 @@
 .theme-toggler-image img{
    border-radius: 15px;
 }
-.theme-toggler-container{
+/*.theme-toggler-container{
 
-}
+}*/
 .theme-icons{
     height: 40px;
     cursor: pointer;
@@ -52,7 +52,12 @@
 
 
 
-
+a.btn.m-2.p-2.signin-button{
+    border: solid 1px;
+}
+a.btn.m-2.p-2.login-button{
+    border: solid 1px;
+}
 
 
 
@@ -77,13 +82,13 @@
 
 
 
-
 /*Start Footer */
 
 footer {
     background: #0f99d3;
     padding-top: 50px;
     margin-top: 30px;
+    margin-bottom: 0px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
@@ -176,7 +181,6 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    margin-top: 50px;
     background-color: rgb(66, 66, 66);
 }
 
